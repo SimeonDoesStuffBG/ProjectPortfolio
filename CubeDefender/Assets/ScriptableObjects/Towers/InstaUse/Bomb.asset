@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fd7df9f3bbee1d47b68584b5755357c, type: 3}
+  m_Name: Bomb
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 3414506837120345268, guid: f3b03164c4f22e244b216501e3a151e4, type: 3}
+  width: 1
+  height: 1
+  mesh: {fileID: -849867405023671905, guid: d6578930376b4d949ae5d56dd56b3fc5, type: 3}
+  material: {fileID: -876546973899608171, guid: d6578930376b4d949ae5d56dd56b3fc5, type: 3}
+  showcaseTexture: {fileID: 21300000, guid: 24ec8ffff1a0fae4ab4d9d74659aefc7, type: 3}
+  price: 150
+  reloadTime: 7.5
+  isUpgradeable: 0
+  isUpgrade: 0
+  Upgrade: {fileID: 0}
+  canBePlacedOn:
+    serializedVersion: 2
+    m_Bits: 8
+  Health: 10
+  type: 3
+  imediateUse: 1
+  range: 3
+  damagesCurrentSpot: 0
+  playerActivated: 0
+  particleSystem: {fileID: 7634297923212434135, guid: c146ed76a0d5bc5479bdf84dff156603, type: 3}

@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 547c85a1dc9d36240aa8f89d555428f0, type: 3}
+  m_Name: Scribe
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 3414506837120345268, guid: f3b03164c4f22e244b216501e3a151e4, type: 3}
+  width: 1
+  height: 1
+  mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+  material: {fileID: 2100000, guid: e371e267c1b78234885e2f6e83a200b0, type: 2}
+  price: 50
+  reloadTime: 7.5
+  isUpgradeable: 1
+  isUpgrade: 0
+  Upgrade: {fileID: 11400000, guid: be157da2c0b033b45b7510ae49c434ba, type: 2}
+  canBePlacedOn:
+    serializedVersion: 2
+    m_Bits: 8
+  Health: 10
+  type: 2
+  productionSpeed: 20
+  initialProduction: 5
+  currencyProduced: 25
+  currencyUnit: {fileID: 188168539538171149, guid: bed57c8f1d8a3c94fb4b39fb2e7fdb2a, type: 3}

@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd90ad0b114e416488d1170d96cbf2c5, type: 3}
+  m_Name: Gunner
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 3414506837120345268, guid: f3b03164c4f22e244b216501e3a151e4, type: 3}
+  width: 1
+  height: 1
+  mesh: {fileID: -1532155807541134762, guid: 05db0297d257c33458c2a5707d6260f3, type: 3}
+  material: {fileID: -876546973899608171, guid: 05db0297d257c33458c2a5707d6260f3, type: 3}
+  showcaseTexture: {fileID: 21300000, guid: b62527c54293b0b418f5fd30becec472, type: 3}
+  price: 100
+  reloadTime: 7.5
+  isUpgradeable: 1
+  isUpgrade: 0
+  Upgrade: {fileID: 11400000, guid: b68882f883f6ead4f94b38cd88c89483, type: 2}
+  canBePlacedOn:
+    serializedVersion: 2
+    m_Bits: 8
+  Health: 10
+  type: 0
+  projectileDamage: 3
+  projectilesFired: 1
+  attackSpeed: 3
+  range: 20
+  AffectedColumns: 1
+  canHitAreal: 0
+  explosiveProjectile: 0
+  explosionRange: 1.5
+  particleSystem: {fileID: 4315079800613057254, guid: 50ab1897b34f04d43bb341753408e450, type: 3}

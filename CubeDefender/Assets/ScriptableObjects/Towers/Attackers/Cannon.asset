@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd90ad0b114e416488d1170d96cbf2c5, type: 3}
+  m_Name: Cannon
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 0}
+  width: 1
+  height: 1
+  mesh: {fileID: 369689273696691656, guid: 53bc6603fff3e554d89971121f8f247b, type: 3}
+  material: {fileID: -876546973899608171, guid: 53bc6603fff3e554d89971121f8f247b, type: 3}
+  showcaseTexture: {fileID: 21300000, guid: f41b14718be037846a2d0376b56a1e19, type: 3}
+  price: 200
+  reloadTime: 7.5
+  isUpgradeable: 0
+  isUpgrade: 1
+  Upgrade: {fileID: 0}
+  canBePlacedOn:
+    serializedVersion: 2
+    m_Bits: 8
+  Health: 10
+  type: 0
+  projectileDamage: 3
+  projectilesFired: 1
+  attackSpeed: 4.5
+  range: 20
+  AffectedColumns: 1
+  canHitAreal: 0
+  explosiveProjectile: 1
+  explosionRange: 3
+  particleSystem: {fileID: 7634297923212434135, guid: c146ed76a0d5bc5479bdf84dff156603, type: 3}

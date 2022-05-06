@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f0142a5a66d3814a9631eef98e3b84e, type: 3}
+  m_Name: Wall
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 3414506837120345268, guid: f3b03164c4f22e244b216501e3a151e4, type: 3}
+  width: 1
+  height: 1
+  mesh: {fileID: 8733429697405204941, guid: 62dace5ef229b914a9a02c5eb7f3e447, type: 3}
+  material: {fileID: -876546973899608171, guid: 62dace5ef229b914a9a02c5eb7f3e447, type: 3}
+  showcaseTexture: {fileID: 21300000, guid: c807d47930e15304c85791dbe2a7b835, type: 3}
+  price: 50
+  reloadTime: 30
+  isUpgradeable: 0
+  isUpgrade: 0
+  Upgrade: {fileID: 0}
+  canBePlacedOn:
+    serializedVersion: 2
+    m_Bits: 8
+  Health: 100
+  type: 1
+  canBeLeaped: 1
+  CanBePlacedOnOthers: 0
