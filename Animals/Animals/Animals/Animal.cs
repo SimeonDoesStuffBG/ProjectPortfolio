@@ -42,18 +42,31 @@ namespace Animals.Animals
         }
 
 
-        bool isEdible(Food testedFood, int left, int right)
+        bool isEdible(Food testedFood)
         {//uses Binary search to find if a piece of food is edible
-            int middle = (left + right) / 2;
+            int left = 0;
+            int right = this.foods.Length -1;
 
-            if (testedFood == this.foods[middle])
-                return true;
-            if (left == right)
-                return false;
-            if (testedFood < this.foods[middle])
-                return isEdible(testedFood, left, middle);
-            //if (searchedValue > food[middle])
-                return isEdible(testedFood, middle, right);
+            int middle = (left + right) / 2;
+            do { 
+                if (testedFood == this.foods[middle] || testedFood == this.foods[left] || testedFood == this.foods[right])
+                 return true;
+                if (testedFood > foods[middle])
+                {
+                    left = middle;
+                    right--;
+                }
+                else
+                {
+                    right = middle;
+                    left++;
+                }
+                    
+                    
+            }while(left != right)
+
+            return false;
+            
         }
     }
 }
