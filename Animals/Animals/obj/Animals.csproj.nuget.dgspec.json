@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Simeon\\Programing Projects\\Animals\\Animals\\Animals.csproj": {}
+    "C:\\Simeon\\Programing Projects\\ProjectPortfolio\\Animals\\Animals\\Animals.csproj": {}
   },
   "projects": {
-    "C:\\Simeon\\Programing Projects\\Animals\\Animals\\Animals.csproj": {
+    "C:\\Simeon\\Programing Projects\\ProjectPortfolio\\Animals\\Animals\\Animals.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Simeon\\Programing Projects\\Animals\\Animals\\Animals.csproj",
+        "projectUniqueName": "C:\\Simeon\\Programing Projects\\ProjectPortfolio\\Animals\\Animals\\Animals.csproj",
         "projectName": "Animals",
-        "projectPath": "C:\\Simeon\\Programing Projects\\Animals\\Animals\\Animals.csproj",
+        "projectPath": "C:\\Simeon\\Programing Projects\\ProjectPortfolio\\Animals\\Animals\\Animals.csproj",
         "packagesPath": "C:\\Users\\SGMilev\\.nuget\\packages\\",
-        "outputPath": "C:\\Simeon\\Programing Projects\\Animals\\Animals\\obj\\",
+        "outputPath": "C:\\Simeon\\Programing Projects\\ProjectPortfolio\\Animals\\Animals\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\SGMilev\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -4,21 +4,22 @@ using System.Text;
 
 enum Food
 {
-    cow, chicken, rabbit, whale, shark, carp, pike, moose, plankton, squid,//meat
+    cow, chicken, rabbit, deer, whale, shark, carp, pike, moose, plankton, squid,//meat
     carrot, letuce, grass, cucumber, potato, peanut, almond,//plants
     honey, eggs, milk, caviar, mushrooms//other
         //I may have gone a bit overkill with the foods
 }
 
-namespace Animals.Animals
-{
+
+
     class Animal
     {
         int health;
         Food[] foods;
-
+        readonly int maxHealth; 
         public Animal(int health, Food[] foods)
         {
+            this.maxHealth = health;
             this.health = health;
             this.foods = new Food[foods.Length];
             for (int i =0; i<foods.Length; i++)
@@ -34,11 +35,14 @@ namespace Animals.Animals
 
         public void eat(Food food)
         {
-            if (isEdible(food, 0, this.foods.Length))
-
-                health++;
-            else
-                health--;
+            if (health > 0)
+            {
+                if (isEdible(food))
+                    health += (health < maxHealth) ? 1 : 0;
+                else
+                    health--;
+            }
+            
         }
 
 
@@ -47,10 +51,12 @@ namespace Animals.Animals
             int left = 0;
             int right = this.foods.Length -1;
 
-            int middle = (left + right) / 2;
-            do { 
+
+            do
+            {
+                int middle = (left + right) / 2;
                 if (testedFood == this.foods[middle] || testedFood == this.foods[left] || testedFood == this.foods[right])
-                 return true;
+                    return true;
                 if (testedFood > foods[middle])
                 {
                     left = middle;
@@ -61,12 +67,12 @@ namespace Animals.Animals
                     right = middle;
                     left++;
                 }
-                    
-                    
-            }while(left != right)
+
+
+            } while (left != right);
 
             return false;
             
         }
     }
-}
+

@@ -11,3 +11,16 @@ C:\Simeon\Programing Projects\Animals\Animals\obj\Debug\netcoreapp3.1\Animals.cs
 C:\Simeon\Programing Projects\Animals\Animals\obj\Debug\netcoreapp3.1\Animals.dll
 C:\Simeon\Programing Projects\Animals\Animals\obj\Debug\netcoreapp3.1\Animals.pdb
 C:\Simeon\Programing Projects\Animals\Animals\obj\Debug\netcoreapp3.1\Animals.genruntimeconfig.cache
+C:\Simeon\Programing Projects\ProjectPortfolio\Animals\Animals\bin\Debug\netcoreapp3.1\Animals.exe
+C:\Simeon\Programing Projects\ProjectPortfolio\Animals\Animals\bin\Debug\netcoreapp3.1\Animals.deps.json
+C:\Simeon\Programing Projects\ProjectPortfolio\Animals\Animals\bin\Debug\netcoreapp3.1\Animals.runtimeconfig.json
+C:\Simeon\Programing Projects\ProjectPortfolio\Animals\Animals\bin\Debug\netcoreapp3.1\Animals.runtimeconfig.dev.json
+C:\Simeon\Programing Projects\ProjectPortfolio\Animals\Animals\bin\Debug\netcoreapp3.1\Animals.dll
+C:\Simeon\Programing Projects\ProjectPortfolio\Animals\Animals\bin\Debug\netcoreapp3.1\Animals.pdb
+C:\Simeon\Programing Projects\ProjectPortfolio\Animals\Animals\obj\Debug\netcoreapp3.1\Animals.csproj.AssemblyReference.cache
+C:\Simeon\Programing Projects\ProjectPortfolio\Animals\Animals\obj\Debug\netcoreapp3.1\Animals.AssemblyInfoInputs.cache
+C:\Simeon\Programing Projects\ProjectPortfolio\Animals\Animals\obj\Debug\netcoreapp3.1\Animals.AssemblyInfo.cs
+C:\Simeon\Programing Projects\ProjectPortfolio\Animals\Animals\obj\Debug\netcoreapp3.1\Animals.csproj.CoreCompileInputs.cache
+C:\Simeon\Programing Projects\ProjectPortfolio\Animals\Animals\obj\Debug\netcoreapp3.1\Animals.dll
+C:\Simeon\Programing Projects\ProjectPortfolio\Animals\Animals\obj\Debug\netcoreapp3.1\Animals.pdb
+C:\Simeon\Programing Projects\ProjectPortfolio\Animals\Animals\obj\Debug\netcoreapp3.1\Animals.genruntimeconfig.cache
