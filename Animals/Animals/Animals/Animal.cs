@@ -4,7 +4,7 @@ using System.Text;
 
 enum Food
 {
-    cow, chicken, rabbit, deer, whale, shark, carp, pike, moose, plankton, squid,//meat
+    cow = 1, chicken, rabbit, deer, whale, shark, carp, pike, moose, plankton, squid,//meat
     carrot, letuce, grass, cucumber, potato, peanut, almond,//plants
     honey, eggs, milk, caviar, mushrooms//other
         //I may have gone a bit overkill with the foods
@@ -37,14 +37,21 @@ enum Food
         {
             if (health > 0)
             {
-                if (isEdible(food))
-                    health += (health < maxHealth) ? 1 : 0;
-                else
-                    health--;
-                
+            if (isEdible(food))
+            {
+                health += (health < maxHealth) ? 1 : 0;
+                Console.WriteLine(" ate a " + food + ". health=" + health);
+            }
+            else
+            {
+                health--;
+                Console.WriteLine(" did not eat a " + food + ". health = "+health);
+            }
                 return true;
             }
+        Console.WriteLine(" is dead.");
         return false;
+
             
         }
 
@@ -72,7 +79,7 @@ enum Food
                 }
 
 
-            } while (left != right);
+            } while (left < right);
 
             return false;
             
