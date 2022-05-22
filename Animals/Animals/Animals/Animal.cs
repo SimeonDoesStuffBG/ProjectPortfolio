@@ -33,7 +33,7 @@ enum Food
             }*/
         }
 
-        public void eat(Food food)
+        public bool eat(Food food)
         {
             if (health > 0)
             {
@@ -41,7 +41,10 @@ enum Food
                     health += (health < maxHealth) ? 1 : 0;
                 else
                     health--;
+                
+                return true;
             }
+        return false;
             
         }
 
