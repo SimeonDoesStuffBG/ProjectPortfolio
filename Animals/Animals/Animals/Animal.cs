@@ -12,77 +12,74 @@ enum Food
 
 
 
-    class Animal
-    {
-        int health;
-        Food[] foods;
-        readonly int maxHealth; 
-        public Animal(int health, Food[] foods)
-        {
-            this.maxHealth = health;
-            this.health = health;
-            this.foods = new Food[foods.Length];
-            for (int i =0; i<foods.Length; i++)
-            {
-                this.foods[i] = foods[i];
-            }
-            Array.Sort(this.foods);
-            /*for(int i =0; i < foods.Length; i++)
-            {
-                Console.WriteLine(foods[i].ToString(), '\n');
-            }*/
-        }
+class Animal
+{
+    int health;
+    Food[] foods;
+    readonly int maxHealth;
 
-        public bool eat(Food food)
+    public Animal(int health, Food[] foods)
+    {
+        this.maxHealth = health;
+        this.health = health;
+        this.foods = new Food[foods.Length];
+        for (int i = 0; i < foods.Length; i++)
         {
-            if (health > 0)
-            {
+            this.foods[i] = foods[i];
+        }
+        Array.Sort(this.foods);
+    }
+
+    public bool eat(Food food)
+    {
+        if (health > 0)
+        {
             if (isEdible(food))
             {
                 health += (health < maxHealth) ? 1 : 0;
-                Console.WriteLine(" ate a " + food + ". health=" + health);
+                Console.Write(" ate a " + food + ".");
             }
             else
             {
                 health--;
-                Console.WriteLine(" did not eat a " + food + ". health = "+health);
+                Console.Write(" did not eat a " + food + ".");
             }
-                return true;
-            }
+            Console.WriteLine("  health = " + health);
+            return true;
+        }
+
         Console.WriteLine(" is dead.");
         return false;
-
-            
-        }
-
-
-        bool isEdible(Food testedFood)
-        {//uses Binary search to find if a piece of food is edible
-            int left = 0;
-            int right = this.foods.Length -1;
-
-
-            do
-            {
-                int middle = (left + right) / 2;
-                if (testedFood == this.foods[middle] || testedFood == this.foods[left] || testedFood == this.foods[right])
-                    return true;
-                if (testedFood > foods[middle])
-                {
-                    left = middle;
-                    right--;
-                }
-                else
-                {
-                    right = middle;
-                    left++;
-                }
-
-
-            } while (left < right);
-
-            return false;
-            
-        }
     }
+
+
+    bool isEdible(Food testedFood)
+    {//uses Binary search to find if a piece of food is edible
+        int left = 0;
+        int right = this.foods.Length - 1;
+
+
+        do
+        {
+            int middle = (left + right) / 2;
+            if (testedFood == this.foods[middle] || testedFood == this.foods[left] || testedFood == this.foods[right])
+                return true;
+            if (testedFood > foods[middle])
+            {
+                left = middle;
+                right--;
+            }
+            else
+            {
+                right = middle;
+                left++;
+            }
+
+
+        } while (left < right);
+
+        return false;
+
+    }
+}
 
