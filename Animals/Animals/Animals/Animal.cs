@@ -2,14 +2,20 @@
 using System.Collections.Generic;
 using System.Text;
 
-enum Food
+/*enum Food
 {
     cow = 1, chicken, rabbit, deer, whale, shark, carp, pike, moose, plankton, squid,//meat
     carrot, letuce, grass, cucumber, potato, peanut, almond,//plants
     honey, eggs, milk, caviar, mushrooms//other
         //I may have gone a bit overkill with the foods
-}
+}*/
 
+enum Food
+{
+    rabbit = 1,chicken, deer, carp,cow,
+    carrot, letuce, grass,cucumber,
+    honey,eggs,milk,mushrooms
+}
 
 
 class Animal
