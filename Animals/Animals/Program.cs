@@ -4,30 +4,28 @@
     class Program
     {
         static Random rand = new Random();
+    //Defining the possible number of possible foods because I don't need to look it up everytime I want to feed someone
+    static int amountOfFoods = Enum.GetNames(typeof(Food)).Length;
+    static void Main(string[] args) 
+    { 
+        Animal[] animals = CreateAnimalPopulation();
 
-    static void Main(string[] args)
-    {
-
-
-        int amountOfFoods = Enum.GetNames(typeof(Food)).Length;//Defining the possible number of possible foods because I don't need to look it up everytime I want to feed someone
-
-        Console.Write("How many Animals Do you wish the simulation to have: ");
-        int amountOfAnimals = Math.Max(Convert.ToInt32(Console.ReadLine()), 0);//negative values are assumed to be zero;
-
-        Animal[] animals = CreateAnimalPopulation(amountOfAnimals);
-
-        while (SimulationStep(animals,amountOfFoods));
+        int passNumber = 0;
+        while (SimulationStep(animals))
+        {
+            Console.WriteLine("Pass Number "+passNumber + ":");
+            passNumber++;
+        }
     }
 
-    static bool SimulationStep(Animal[] animals, int amountOfFoods)
+    static bool SimulationStep(Animal[] animals)
     {
         int amountOfAnimals = animals.Length;
-        Console.WriteLine("In this Pass: ");
         bool animalsAreAlive = false;
         for (int i = 0; i < amountOfAnimals; i++)
         {
             Console.Write(animals[i].ToString() + " " + i);
-            if (animals[i].eat((Food)rand.Next(1, amountOfFoods)))
+            if (animals[i].eat((Food)rand.Next(0, amountOfFoods)))
             {
                 animalsAreAlive = true;
             }
@@ -37,8 +35,11 @@
         return animalsAreAlive;
     }
 
-     static Animal[] CreateAnimalPopulation(int populationSize)
+     static Animal[] CreateAnimalPopulation()
     {
+        Console.Write("How many Animals Do you wish the simulation to have: ");
+        int populationSize = Math.Max(Convert.ToInt32(Console.ReadLine()), 0);//negative values are assumed to be zero;
+
         Animal[] animals = new Animal[populationSize];
 
         for (int i = 0; i < populationSize; i++)

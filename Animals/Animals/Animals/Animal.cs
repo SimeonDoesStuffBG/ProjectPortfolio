@@ -12,7 +12,7 @@ using System.Text;
 
 enum Food
 {
-    rabbit = 1,chicken, deer, carp,cow,
+    rabbit ,chicken, deer, carp,cow,
     carrot, letuce, grass,cucumber,
     honey,eggs,milk,mushrooms
 }
